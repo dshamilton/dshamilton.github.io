@@ -1,464 +1,141 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Hamilton Lab NCSU</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aerosol, Climate & Biogeochemistry Lab | NC State</title>
+  <meta name="description" content="Aerosol, Climate & Biogeochemistry Lab at NC State: fire, aerosols, atmospheric chemistry, ocean nutrients, air quality, and Earth system change." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#061523; --navy2:#092338; --panel:#091827; --line:rgba(255,255,255,.16);
+      --text:#f4f7fb; --muted:rgba(244,247,251,.78); --red:#ff3b22; --orange:#ff8a22;
+      --gold:#d7a431; --cyan:#31d6e8; --purple:#b57cff; --green:#76cf35;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;color:var(--text);background:#05111d;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}.page{display:grid;grid-template-columns:320px 1fr;min-height:100vh}
+    .sidebar{position:fixed;inset:0 auto 0 0;width:320px;background:linear-gradient(180deg,rgba(5,20,33,.98),rgba(4,17,29,.96)),radial-gradient(circle at 30% 10%,rgba(49,214,232,.18),transparent 35%);border-right:1px solid var(--line);padding:34px 38px;display:flex;flex-direction:column;justify-content:space-between;z-index:5}
+    .logo-wrap{text-align:center;margin-bottom:20px;position:relative;z-index:2}.logo-wrap:before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(110,197,255,.18) 0%,rgba(110,197,255,.08) 40%,transparent 75%);z-index:-1}
+    .logo-wrap img{width:220px;max-width:100%;display:block;margin:0 auto 18px;border:0!important;outline:0!important;background:transparent!important;filter:drop-shadow(0 0 15px rgba(110,197,255,.65)) drop-shadow(0 0 35px rgba(110,197,255,.35)) drop-shadow(0 15px 35px rgba(0,0,0,.65));transition:.3s ease}
+    .logo-wrap img:hover{transform:scale(1.03);filter:drop-shadow(0 0 18px rgba(110,197,255,.8)) drop-shadow(0 0 50px rgba(110,197,255,.45)) drop-shadow(0 18px 40px rgba(0,0,0,.75))}
+    .brand{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em;text-align:left}.brand .top{font-size:28px;line-height:1.05;font-weight:700;color:#fff}.brand .bottom{font-size:16px;color:var(--red);margin-top:10px;letter-spacing:.12em}
+    .nav{list-style:none;padding:34px 0 0;margin:0;border-top:1px solid rgba(255,255,255,.06)}.nav li{margin:0 0 18px}.nav a{display:flex;gap:14px;align-items:center;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.82)}.nav a:hover,.nav a.active{color:var(--red)}.icon{width:24px;text-align:center;font-size:19px;color:#8bc7dd}.quote{border-top:1px solid rgba(255,255,255,.06);padding-top:24px;color:rgba(255,255,255,.82);font-style:italic;font-size:14px}.quote .mark{display:block;color:var(--red);font-size:54px;font-family:Georgia,serif;line-height:.5;margin-bottom:8px}
+    main{grid-column:2;min-width:0}.hero{min-height:500px;position:relative;display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:42px;align-items:center;padding:64px;overflow:hidden;background-image:linear-gradient(90deg,rgba(5,14,24,.92),rgba(5,14,24,.55) 52%,rgba(5,14,24,.25)),url("images/fulls/wui.jpg");background-size:cover;background-position:center;border-bottom:1px solid var(--line)}
+    .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 20%,rgba(49,214,232,.18),transparent 28%),linear-gradient(180deg,transparent,rgba(0,0,0,.14));pointer-events:none}.hero>*{position:relative;z-index:1}.hero h1{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-size:58px;line-height:.98;letter-spacing:.02em;margin:0 0 18px;max-width:800px}.accent{width:42px;height:3px;background:var(--red);margin:0 0 22px}.hero p{max-width:640px;color:var(--muted);font-size:17px;margin:0}
+    .pi-card{background:rgba(5,14,24,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:18px;box-shadow:0 24px 60px rgba(0,0,0,.35)}.profile-photo{width:100%;height:310px;object-fit:cover;object-position:center 28%;border-radius:10px;border:1px solid rgba(255,255,255,.15);box-shadow:0 20px 40px rgba(0,0,0,.45),0 0 25px rgba(110,197,255,.15)}.pi-card h3{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:28px;line-height:1;margin:16px 0 6px}.pi-card p{font-size:14px;color:rgba(255,255,255,.84);margin:0 0 12px}.pi-links{display:flex;flex-wrap:wrap;gap:8px}.pi-links a{font-family:"Barlow Condensed";letter-spacing:.08em;text-transform:uppercase;font-size:13px;color:var(--cyan)}
+    .theme-section{background:linear-gradient(180deg,#081a2a,#061421);padding:30px 18px 36px;border-bottom:1px solid var(--line)}.theme-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:1260px;margin:0 auto}.theme{min-height:220px;position:relative;overflow:hidden;border-radius:6px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid rgba(255,255,255,.12);background:#111}.theme:before{content:"";position:absolute;inset:0;background-image:var(--bg);background-size:cover;background-position:center;opacity:.36;filter:saturate(1.05) contrast(1.08)}.theme:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,10,17,.1),rgba(3,10,17,.88))}.theme>*{position:relative;z-index:1}.theme h3{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;line-height:1.05;letter-spacing:.04em;margin:0 0 10px;font-size:25px}.theme p{font-size:14px;color:rgba(255,255,255,.84);margin:0 0 12px}.theme a{font-family:"Barlow Condensed";font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c);font-size:14px}.theme.fire{--bg:url("images/fulls/fire.jpg");--c:var(--red)}.theme.aerosol{--bg:url("images/fulls/dust.jpg");--c:var(--gold)}.theme.ocean{--bg:url("images/fulls/ocean.jpg");--c:var(--cyan)}.theme.digital{--bg:url("images/fulls/digital.jpg");--c:var(--purple)}
+    .content{background:linear-gradient(180deg,#071522,#06111c);padding:30px 18px 44px;position:relative;overflow:hidden}.content:before{content:"";position:absolute;right:-180px;top:30px;width:460px;height:460px;background:radial-gradient(circle,rgba(49,214,232,.1),transparent 70%);pointer-events:none}.section-title{text-align:center;font-family:"Barlow Condensed";letter-spacing:.12em;text-transform:uppercase;font-size:20px;margin:0 0 22px}.section-title:after{content:"";display:block;width:38px;height:3px;background:var(--red);margin:6px auto 0}.work-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;max-width:1260px;margin:0 auto 42px}.work{position:relative;min-height:200px;border-radius:5px;overflow:hidden;padding:18px 14px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid rgba(255,255,255,.11);background:#111}.work:before{content:"";position:absolute;inset:0;background-image:var(--bg);background-size:cover;background-position:center;opacity:.65;filter:saturate(1.08)}.work:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.82))}.work>*{position:relative;z-index:1}.work h3{font-family:"Barlow Condensed";text-transform:uppercase;line-height:1.05;letter-spacing:.04em;margin:0 0 10px;font-size:21px}.work p{font-size:13px;color:rgba(255,255,255,.78);margin:0 0 8px}.work a{color:var(--red);font-family:"Barlow Condensed";font-weight:700;letter-spacing:.09em;text-transform:uppercase;font-size:13px}.w1{--bg:url("images/fulls/fire.jpg")}.w2{--bg:url("images/fulls/dust.jpg")}.w3{--bg:url("images/fulls/phosphorus.jpg")}.w4{--bg:url("images/fulls/wui.jpg")}.w5{--bg:url("images/fulls/digital.jpg")}.w6{--bg:url("images/fulls/smoke.jpg")}
+    .join-section{max-width:1260px;margin:0 auto 42px}.join-lead{max-width:850px;margin:0 auto 22px;text-align:center;color:var(--muted)}.join-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 26px}.join-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);border-radius:8px;padding:24px}.join-card h3{font-family:"Barlow Condensed";font-size:25px;text-transform:uppercase;color:var(--red);letter-spacing:.06em;margin:0 0 10px}.join-card p{color:var(--muted);margin:0}.join-buttons{text-align:center;margin-bottom:4px}
+    .info{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.4fr .8fr;gap:16px}.panel{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:9px;padding:24px}.panel h2{font-family:"Barlow Condensed";font-size:30px;text-transform:uppercase;margin:0 0 8px}.panel p{color:var(--muted)}.button{display:inline-block;border:1px solid rgba(255,255,255,.32);padding:10px 14px;border-radius:4px;font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-right:8px}.button.red{background:var(--red);border-color:var(--red)}
+    .people-hero{min-height:360px}.people-grid{max-width:1180px;margin:0 auto 38px;display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:start}.people-photo{width:100%;border-radius:14px;object-fit:cover;border:1px solid rgba(255,255,255,.15);box-shadow:0 24px 60px rgba(0,0,0,.42)}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tag{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 10px;color:rgba(255,255,255,.84);font-size:13px}.student-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.person-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);border-radius:8px;padding:22px}.person-card h3{font-family:"Barlow Condensed";font-size:25px;text-transform:uppercase;margin:0 0 8px;color:#fff}.person-card p{color:var(--muted);margin:0}
+    @media(max-width:1180px){.page{grid-template-columns:1fr}.sidebar{position:relative;width:auto;display:block}.logo-wrap img{width:180px}.brand{text-align:center}.nav{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}.nav li{margin:0}.quote{display:none}main{grid-column:1}.hero{grid-template-columns:1fr}.theme-grid{grid-template-columns:repeat(2,1fr)}.work-grid{grid-template-columns:repeat(3,1fr)}.people-grid{grid-template-columns:1fr}.student-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:700px){.sidebar{padding:24px}.hero{padding:38px 24px}.hero h1{font-size:42px}.theme-grid,.work-grid,.info,.join-grid,.student-grid{grid-template-columns:1fr}.brand .top{font-size:25px}.profile-photo{height:260px}}
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>I am Strata</strong>, a super simple<br />
-					responsive site template freebie<br />
-					crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
-				</div>
-			</header>
+  </style>
+</head>
+<body>
+  <div class="page">
 
-		<!-- Main -->
-			<div id="main">
+    <aside class="sidebar">
+      <div>
+        <div class="logo-wrap"><img src="images/World.png" alt="Aerosol, Climate & Biogeochemistry Lab logo"></div>
+        <div class="brand"><div class="top">Aerosol, Climate &amp;<br>Biogeochemistry Lab</div><div class="bottom">North Carolina State University</div></div>
+        <ul class="nav">
+          <li><a class="active" href="index.html#home"><span class="icon">⌂</span>Home</a></li>
+          <li><a href="index.html#research"><span class="icon">⚗</span>Research</a></li>
+          <li><a href="people.html"><span class="icon">☷</span>People</a></li>
+          <li><a href="index.html#join"><span class="icon">♁</span>Join us</a></li>
+          <li><a href="index.html#publications"><span class="icon">▤</span>Publications</a></li>
+          <li><a href="index.html#news"><span class="icon">▦</span>News</a></li>
+          <li><a href="index.html#contact"><span class="icon">✉</span>Contact</a></li>
+        </ul>
+      </div>
+      <div class="quote"><span class="mark">“</span>Understanding how fire, aerosols, and atmospheric processes shape our planet and our future.</div>
+    </aside>
+    <main id="home">
+      <section class="hero">
+        <div>
+          <h1>Understanding environmental change across the Earth system</h1>
+          <div class="accent"></div>
+          <p>We combine observations, atmospheric chemistry, Earth system modelling, and immersive technologies to understand how environmental change affects climate, air quality, ecosystems, and society.</p>
+        </div>
+        <aside class="pi-card">
+          <img class="profile-photo" src="images/Douglas-Hamilton-500.jpg" alt="Douglas S. Hamilton">
+          <h3>Douglas S. Hamilton</h3>
+          <p>Assistant Professor, NC State University<br>Aerosol, Climate &amp; Biogeochemistry Lab</p>
+          <div class="pi-links">
+            <a href="people.html">Profile</a>
+            <a href="https://meas.sciences.ncsu.edu/people/dshamil3/" target="_blank" rel="noopener">NC State</a>
+            <a href="mailto:dshamil3@ncsu.edu">Email</a>
+          </div>
+        </aside>
+      </section>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Ipsum lorem dolor aliquam ante commodo<br />
-							magna sed accumsan arcu neque.</h2>
-						</header>
-						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
-					</section>
+      <section class="theme-section" id="themes">
+        <h2 class="section-title">Research Themes</h2>
+        <div class="theme-grid">
+          <article class="theme fire">
+            <h3>Fire, Climate &amp; Society</h3>
+            <p>Understanding how climate change is reshaping wildfire activity and its impacts on air quality, human health, ecosystems, and society.</p>
+            <a href="#research">Explore →</a>
+          </article>
+          <article class="theme aerosol">
+            <h3>Aerosols &amp; Atmospheric Chemistry</h3>
+            <p>Quantifying emissions, transport, transformation, and deposition of natural and anthropogenic aerosols across the Earth system.</p>
+            <a href="#research">Explore →</a>
+          </article>
+          <article class="theme ocean">
+            <h3>Ocean Nutrients &amp; Biogeochemistry</h3>
+            <p>Investigating how atmospheric deposition of iron, phosphorus, and nitrogen influences marine productivity and biogeochemical cycling.</p>
+            <a href="#research">Explore →</a>
+          </article>
+          <article class="theme digital">
+            <h3>Digital Earth &amp; Landscape Literacy</h3>
+            <p>Developing immersive technologies, Earth system models, and visualization tools to understand and communicate environmental change.</p>
+            <a href="#research">Explore →</a>
+          </article>
+        </div>
+      </section>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Magna sed consequat tempus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-					</section>
+      <section class="content" id="research">
+        <h2 class="section-title">Featured Research</h2>
+        <div class="work-grid">
+          <article class="work w1"><h3>Climate Models Underestimate Preindustrial Fire Emissions</h3><p>Fire, climate forcing, and Earth system uncertainty.</p><a href="https://doi.org/10.5194/acp-25-5857-2025" target="_blank" rel="noopener">Read paper →</a></article>
+          <article class="work w2"><h3>Post-Burn Dust and Earth System Feedbacks</h3><p>Wildfire legacies extend beyond smoke.</p><a href="https://doi.org/10.1029/2021GL097040" target="_blank" rel="noopener">Read paper →</a></article>
+          <article class="work w3"><h3>Atmospheric Phosphorus on a Changing Planet</h3><p>Rathod &amp; Hamilton, 2025</p><a href="#" target="_blank" rel="noopener">Read paper →</a></article>
+          <article class="work w4"><h3>Los Angeles Wildland–Urban Interface Fires</h3><p>WUI emissions, transport, deposition, and impacts.</p><a href="https://eos.org/features/scrambling-to-study-smoke-on-the-water" target="_blank" rel="noopener">Read article →</a></article>
+          <article class="work w5"><h3>Into the Fire: AR/VR for Wildfire Science</h3><p>Digital Earth &amp; Landscape Literacy.</p><a href="https://news.ncsu.edu/2024/07/fires-and-climate-are-changing-science-needs-to-change-too/" target="_blank" rel="noopener">Read article →</a></article>
+          <article class="work w6"><h3>Wildfire Smoke, Air Quality and Human Health</h3><p>Smoke impacts across atmosphere, ocean, and society.</p><a href="https://www.popsci.com/environment/wildfires-algae-arctic-ocean/" target="_blank" rel="noopener">Read article →</a></article>
+        </div>
 
-				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
-										United States
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">hello@untitled.tld</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
+        <section id="join" class="join-section">
+          <h2 class="section-title">Join Us</h2>
+          <p class="join-lead">Build the model. Question the model. Communicate what it means. We welcome students and collaborators interested in aerosols, climate, atmospheric chemistry, biogeochemistry, wildfire science, air quality, data visualization, and immersive learning.</p>
+          <div class="join-grid">
+            <div class="join-card"><h3>Graduate Students</h3><p>Prospective graduate students interested in modelling, observations, fire, aerosols, atmospheric chemistry, or ocean nutrient deposition are encouraged to reach out with a short statement of research interests.</p></div>
+            <div class="join-card"><h3>Undergraduate Research</h3><p>Undergraduate researchers can contribute to active projects involving coding, field data, instrumentation, visualization, science communication, and AR/VR development.</p></div>
+            <div class="join-card"><h3>Collaborators</h3><p>We welcome collaborations spanning atmospheric science, ecology, oceanography, public health, computer science, education, and environmental visualization.</p></div>
+          </div>
+          <div class="join-buttons"><a class="button red" href="mailto:dshamil3@ncsu.edu">Contact Douglas</a><a class="button" href="people.html">Meet the Lab</a></div>
+        </section>
 
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
-
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				-->
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://scholar.google.com/citations?user=douglasshamilton=en&user=u0bVljUAAAAJ" class="icon solid fa-book"><span class="label">GoogleScholar</span></a></li>
-						<li><a href="https://twitter.com/im_dshamilton" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://github.com/dshamilton" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://meas.sciences.ncsu.edu" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="mailto:dshamil3@ncsu.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <div class="info">
+          <section class="panel">
+            <h2>Build the model. Question the model. Communicate what it means.</h2>
+            <p>Our lab connects atmospheric science, climate change, air quality, instrumentation, data visualization, immersive AR/VR tools, and science communication. We value curiosity, rigor, creativity, kindness, and inclusive collaboration.</p>
+            <a class="button red" href="mailto:dshamil3@ncsu.edu">Email Douglas</a><a class="button" href="https://meas.sciences.ncsu.edu/people/dshamil3/" target="_blank" rel="noopener">NC State profile</a>
+          </section>
+          <section class="panel" id="contact">
+            <h2>Contact</h2>
+            <p><strong>Douglas S. Hamilton</strong><br>Assistant Professor<br>Department of Marine, Earth, and Atmospheric Sciences<br>North Carolina State University</p>
+            <p><a href="mailto:dshamil3@ncsu.edu">dshamil3@ncsu.edu</a></p>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
 </html>
