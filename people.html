@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aerosol, Climate & Biogeochemistry Lab | NC State</title>
+  <meta name="description" content="Aerosol, Climate & Biogeochemistry Lab at NC State: fire, aerosols, atmospheric chemistry, ocean nutrients, air quality, and Earth system change." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#061523; --navy2:#092338; --panel:#091827; --line:rgba(255,255,255,.16);
+      --text:#f4f7fb; --muted:rgba(244,247,251,.78); --red:#ff3b22; --orange:#ff8a22;
+      --gold:#d7a431; --cyan:#31d6e8; --purple:#b57cff; --green:#76cf35;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;color:var(--text);background:#05111d;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}.page{display:grid;grid-template-columns:320px 1fr;min-height:100vh}
+    .sidebar{position:fixed;inset:0 auto 0 0;width:320px;background:linear-gradient(180deg,rgba(5,20,33,.98),rgba(4,17,29,.96)),radial-gradient(circle at 30% 10%,rgba(49,214,232,.18),transparent 35%);border-right:1px solid var(--line);padding:34px 38px;display:flex;flex-direction:column;justify-content:space-between;z-index:5}
+    .logo-wrap{text-align:center;margin-bottom:20px;position:relative;z-index:2}.logo-wrap:before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(110,197,255,.18) 0%,rgba(110,197,255,.08) 40%,transparent 75%);z-index:-1}
+    .logo-wrap img{width:220px;max-width:100%;display:block;margin:0 auto 18px;border:0!important;outline:0!important;background:transparent!important;filter:drop-shadow(0 0 15px rgba(110,197,255,.65)) drop-shadow(0 0 35px rgba(110,197,255,.35)) drop-shadow(0 15px 35px rgba(0,0,0,.65));transition:.3s ease}
+    .logo-wrap img:hover{transform:scale(1.03);filter:drop-shadow(0 0 18px rgba(110,197,255,.8)) drop-shadow(0 0 50px rgba(110,197,255,.45)) drop-shadow(0 18px 40px rgba(0,0,0,.75))}
+    .brand{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em;text-align:left}.brand .top{font-size:28px;line-height:1.05;font-weight:700;color:#fff}.brand .bottom{font-size:16px;color:var(--red);margin-top:10px;letter-spacing:.12em}
+    .nav{list-style:none;padding:34px 0 0;margin:0;border-top:1px solid rgba(255,255,255,.06)}.nav li{margin:0 0 18px}.nav a{display:flex;gap:14px;align-items:center;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.82)}.nav a:hover,.nav a.active{color:var(--red)}.icon{width:24px;text-align:center;font-size:19px;color:#8bc7dd}.quote{border-top:1px solid rgba(255,255,255,.06);padding-top:24px;color:rgba(255,255,255,.82);font-style:italic;font-size:14px}.quote .mark{display:block;color:var(--red);font-size:54px;font-family:Georgia,serif;line-height:.5;margin-bottom:8px}
+    main{grid-column:2;min-width:0}.hero{min-height:500px;position:relative;display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:42px;align-items:center;padding:64px;overflow:hidden;background-image:linear-gradient(90deg,rgba(5,14,24,.92),rgba(5,14,24,.55) 52%,rgba(5,14,24,.25)),url("images/fulls/wui.jpg");background-size:cover;background-position:center;border-bottom:1px solid var(--line)}
+    .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 20%,rgba(49,214,232,.18),transparent 28%),linear-gradient(180deg,transparent,rgba(0,0,0,.14));pointer-events:none}.hero>*{position:relative;z-index:1}.hero h1{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;font-size:58px;line-height:.98;letter-spacing:.02em;margin:0 0 18px;max-width:800px}.accent{width:42px;height:3px;background:var(--red);margin:0 0 22px}.hero p{max-width:640px;color:var(--muted);font-size:17px;margin:0}
+    .pi-card{background:rgba(5,14,24,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:18px;box-shadow:0 24px 60px rgba(0,0,0,.35)}.profile-photo{width:100%;height:310px;object-fit:cover;object-position:center 28%;border-radius:10px;border:1px solid rgba(255,255,255,.15);box-shadow:0 20px 40px rgba(0,0,0,.45),0 0 25px rgba(110,197,255,.15)}.pi-card h3{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:28px;line-height:1;margin:16px 0 6px}.pi-card p{font-size:14px;color:rgba(255,255,255,.84);margin:0 0 12px}.pi-links{display:flex;flex-wrap:wrap;gap:8px}.pi-links a{font-family:"Barlow Condensed";letter-spacing:.08em;text-transform:uppercase;font-size:13px;color:var(--cyan)}
+    .stats{display:grid;grid-template-columns:repeat(5,1fr);background:linear-gradient(180deg,#081a2a,#061421);border-bottom:1px solid var(--line)}.stat{padding:19px 28px;display:flex;gap:17px;align-items:center;border-right:1px solid rgba(255,255,255,.14)}.stat:last-child{border-right:0}.stat .sicon{font-size:34px}.stat:nth-child(1) .sicon{color:var(--red)}.stat:nth-child(2) .sicon{color:var(--orange)}.stat:nth-child(3) .sicon{color:var(--green)}.stat:nth-child(4) .sicon{color:var(--cyan)}.stat:nth-child(5) .sicon{color:var(--purple)}.num{font-size:30px;font-weight:800;line-height:1}.label{font-family:"Barlow Condensed";letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.78);font-size:14px;line-height:1.1}
+    .content{background:linear-gradient(180deg,#071522,#06111c);padding:30px 18px 44px;position:relative;overflow:hidden}.content:before{content:"";position:absolute;right:-180px;top:30px;width:460px;height:460px;background:radial-gradient(circle,rgba(49,214,232,.1),transparent 70%);pointer-events:none}.section-title{text-align:center;font-family:"Barlow Condensed";letter-spacing:.12em;text-transform:uppercase;font-size:20px;margin:0 0 22px}.section-title:after{content:"";display:block;width:38px;height:3px;background:var(--red);margin:6px auto 0}.work-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;max-width:1260px;margin:0 auto 42px}.work{position:relative;min-height:200px;border-radius:5px;overflow:hidden;padding:18px 14px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid rgba(255,255,255,.11);background:#111}.work:before{content:"";position:absolute;inset:0;background-image:var(--bg);background-size:cover;background-position:center;opacity:.65;filter:saturate(1.08)}.work:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.82))}.work>*{position:relative;z-index:1}.work h3{font-family:"Barlow Condensed";text-transform:uppercase;line-height:1.05;letter-spacing:.04em;margin:0 0 10px;font-size:21px}.work p{font-size:13px;color:rgba(255,255,255,.78);margin:0 0 8px}.work a{color:var(--red);font-family:"Barlow Condensed";font-weight:700;letter-spacing:.09em;text-transform:uppercase;font-size:13px}.w1{--bg:url("images/fulls/fire.jpg")}.w2{--bg:url("images/fulls/dust.jpg")}.w3{--bg:url("images/fulls/phosphorus.jpg")}.w4{--bg:url("images/fulls/wui.jpg")}.w5{--bg:url("images/fulls/digital.jpg")}.w6{--bg:url("images/fulls/smoke.jpg")}
+    .join-section{max-width:1260px;margin:0 auto 42px}.join-lead{max-width:850px;margin:0 auto 22px;text-align:center;color:var(--muted)}.join-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 26px}.join-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);border-radius:8px;padding:24px}.join-card h3{font-family:"Barlow Condensed";font-size:25px;text-transform:uppercase;color:var(--red);letter-spacing:.06em;margin:0 0 10px}.join-card p{color:var(--muted);margin:0}.join-buttons{text-align:center;margin-bottom:4px}
+    .info{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.4fr .8fr;gap:16px}.panel{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:9px;padding:24px}.panel h2{font-family:"Barlow Condensed";font-size:30px;text-transform:uppercase;margin:0 0 8px}.panel p{color:var(--muted)}.button{display:inline-block;border:1px solid rgba(255,255,255,.32);padding:10px 14px;border-radius:4px;font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-right:8px}.button.red{background:var(--red);border-color:var(--red)}
+    .people-hero{min-height:360px}.people-grid{max-width:1180px;margin:0 auto 38px;display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:start}.people-photo{width:100%;border-radius:14px;object-fit:cover;border:1px solid rgba(255,255,255,.15);box-shadow:0 24px 60px rgba(0,0,0,.42)}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tag{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 10px;color:rgba(255,255,255,.84);font-size:13px}.student-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.person-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);border-radius:8px;padding:22px}.person-card h3{font-family:"Barlow Condensed";font-size:25px;text-transform:uppercase;margin:0 0 8px;color:#fff}.person-card p{color:var(--muted);margin:0}
+    @media(max-width:1180px){.page{grid-template-columns:1fr}.sidebar{position:relative;width:auto;display:block}.logo-wrap img{width:180px}.brand{text-align:center}.nav{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}.nav li{margin:0}.quote{display:none}main{grid-column:1}.hero{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.work-grid{grid-template-columns:repeat(3,1fr)}.people-grid{grid-template-columns:1fr}.student-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:700px){.sidebar{padding:24px}.hero{padding:38px 24px}.hero h1{font-size:42px}.stats,.work-grid,.info,.join-grid,.student-grid{grid-template-columns:1fr}.stat{border-right:0}.brand .top{font-size:25px}.profile-photo{height:260px}}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <aside class="sidebar">
+      <div>
+        <div class="logo-wrap"><img src="images/World.png" alt="Aerosol, Climate & Biogeochemistry Lab logo"></div>
+        <div class="brand"><div class="top">Aerosol, Climate &amp;<br>Biogeochemistry Lab</div><div class="bottom">North Carolina State University</div></div>
+        <ul class="nav">
+          <li><a href="index.html#home"><span class="icon">⌂</span>Home</a></li>
+          <li><a href="index.html#research"><span class="icon">⚗</span>Research</a></li>
+          <li><a class="active" href="people.html"><span class="icon">☷</span>People</a></li>
+          <li><a href="index.html#join"><span class="icon">♁</span>Join us</a></li>
+          <li><a href="index.html#publications"><span class="icon">▤</span>Publications</a></li>
+          <li><a href="index.html#news"><span class="icon">▦</span>News</a></li>
+          <li><a href="index.html#contact"><span class="icon">✉</span>Contact</a></li>
+        </ul>
+      </div>
+      <div class="quote"><span class="mark">“</span>Understanding how fire, aerosols, and atmospheric processes shape our planet and our future.</div>
+    </aside>
+    <main id="people">
+      <section class="hero people-hero">
+        <div>
+          <h1>People</h1>
+          <div class="accent"></div>
+          <p>The Aerosol, Climate &amp; Biogeochemistry Lab brings together students, collaborators, and community partners working across atmospheric science, Earth system modelling, environmental data, and science communication.</p>
+        </div>
+        <aside class="pi-card">
+          <img class="profile-photo" src="images/Douglas-Hamilton-500.jpg" alt="Douglas S. Hamilton">
+          <h3>Douglas S. Hamilton</h3>
+          <p>Principal Investigator<br>Assistant Professor, NC State University</p>
+        </aside>
+      </section>
+
+      <section class="content">
+        <h2 class="section-title">Principal Investigator</h2>
+        <div class="people-grid">
+          <img class="people-photo" src="images/Douglas-Hamilton-500.jpg" alt="Douglas S. Hamilton">
+          <section class="panel">
+            <h2>Douglas S. Hamilton</h2>
+            <p><strong>Assistant Professor</strong><br>Department of Marine, Earth, and Atmospheric Sciences<br>North Carolina State University</p>
+            <p>Douglas is an Earth system scientist working at the intersection of aerosols, climate, atmospheric chemistry, biogeochemistry, wildfire science, air quality, and environmental change. The lab combines models, observations, field data, and immersive visualization tools to understand how atmospheric processes shape climate, ecosystems, and society.</p>
+            <div class="tags">
+              <span class="tag">Wildfire science</span><span class="tag">Aerosols</span><span class="tag">Atmospheric chemistry</span><span class="tag">Earth system modelling</span><span class="tag">Ocean biogeochemistry</span><span class="tag">Air quality</span><span class="tag">Landscape literacy</span>
+            </div>
+            <p style="margin-top:18px"><a class="button red" href="mailto:dshamil3@ncsu.edu">Email Douglas</a><a class="button" href="https://meas.sciences.ncsu.edu/people/dshamil3/" target="_blank" rel="noopener">NC State profile</a></p>
+          </section>
+        </div>
+
+        <h2 class="section-title">Lab Community</h2>
+        <div class="student-grid">
+          <article class="person-card"><h3>Graduate Researchers</h3><p>Students working on aerosols, fire, atmospheric chemistry, air quality, ocean nutrients, and Earth system modelling.</p></article>
+          <article class="person-card"><h3>Undergraduate Researchers</h3><p>Students contributing to coding, field data, instrumentation, visualization, and immersive environmental learning.</p></article>
+          <article class="person-card"><h3>Collaborators</h3><p>Partners across atmospheric science, oceanography, ecology, public health, education, and computer science.</p></article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
