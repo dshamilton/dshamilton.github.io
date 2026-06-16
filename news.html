@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aerosol, Climate & Biogeochemistry Lab | NC State</title>
-  <meta name="description" content="Aerosol, Climate & Biogeochemistry Lab at NC State: fire, aerosols, atmospheric chemistry, ocean nutrients, air quality, and Earth system change." />
+  <title>News | Aerosol, Climate & Biogeochemistry Lab</title>
+  <meta name="description" content="News from the Aerosol, Climate & Biogeochemistry Lab at NC State." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -39,6 +39,19 @@
     @media(max-width:1180px){.page{grid-template-columns:1fr}.sidebar{position:relative;width:auto;display:block}.logo-wrap img{width:180px}.brand{text-align:center}.nav{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}.nav li{margin:0}.quote{display:none}main{grid-column:1}.hero{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.work-grid{grid-template-columns:repeat(3,1fr)}.people-grid{grid-template-columns:1fr}.student-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:700px){.sidebar{padding:24px}.hero{padding:38px 24px}.hero h1{font-size:42px}.stats,.work-grid,.info,.join-grid,.student-grid,.team-card{grid-template-columns:1fr}.stat{border-right:0}.brand .top{font-size:25px}.profile-photo{height:260px}}
 
+
+    .news-grid{max-width:1180px;margin:0 auto 44px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .news-card{position:relative;overflow:hidden;min-height:220px;border-radius:12px;border:1px solid rgba(255,255,255,.11);background:#111;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 18px 44px rgba(0,0,0,.18)}
+    .news-card:before{content:"";position:absolute;inset:0;background-image:var(--bg);background-size:cover;background-position:center;opacity:.48;filter:saturate(1.05) contrast(1.08)}
+    .news-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.84))}
+    .news-card>*{position:relative;z-index:1}
+    .news-card h2{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.04em;font-size:30px;line-height:1.02;margin:0 0 8px}
+    .news-card .meta{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--cyan);font-weight:700;margin-bottom:10px}
+    .news-card p{color:rgba(255,255,255,.82);margin:0 0 14px}
+    .news-card a{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.09em;color:var(--red);font-weight:700}
+    .news-intro{max-width:860px;margin:0 auto 26px;text-align:center;color:var(--muted)}
+    .n1{--bg:url("images/fulls/ocean.jpg")} .n2{--bg:url("images/fulls/wui.jpg")} .n3{--bg:url("images/fulls/fire.jpg")} .n4{--bg:url("images/fulls/smoke.jpg")} .n5{--bg:url("images/fulls/phosphorus.jpg")} .n6{--bg:url("images/fulls/dust.jpg")}
+    @media(max-width:800px){.news-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -50,157 +63,125 @@
         <div class="brand"><div class="top">Aerosol, Climate &amp;<br>Biogeochemistry Lab</div><div class="bottom">North Carolina State University</div></div>
         <ul class="nav">
           <li><a href="index.html#home"><span class="icon">⌂</span>Home</a></li>
-          <li><a href="index.html#research"><span class="icon">⚗</span>Research</a></li>
-          <li><a class="active" href="people.html"><span class="icon">☷</span>People</a></li>
+          <li><a href="index.html#research-themes"><span class="icon">⚗</span>Research</a></li>
+          <li><a href="people.html"><span class="icon">☷</span>People</a></li>
           <li><a href="index.html#join"><span class="icon">♁</span>Join us</a></li>
           <li><a href="index.html#publications"><span class="icon">▤</span>Publications</a></li>
-          <li><a href="news.html"><span class="icon">▦</span>News</a></li>
+          <li><a class="active" href="news.html"><span class="icon">▦</span>News</a></li>
           <li><a href="index.html#contact"><span class="icon">✉</span>Contact</a></li>
         </ul>
       </div>
-      <div class="quote"><span class="mark">“</span>Understanding how fire, aerosols, and atmospheric processes shape our planet and our future.</div>
+      <div class="quote"><span class="mark">“</span>Research stories from the Aerosol, Climate &amp; Biogeochemistry Lab.</div>
     </aside>
-    <main id="people">
+
+    <main id="news">
       <section class="hero people-hero">
         <div>
-          <h1>People</h1>
+          <h1>News</h1>
           <div class="accent"></div>
-          <p>The Aerosol, Climate &amp; Biogeochemistry Lab brings together students, collaborators, and community partners working across atmospheric science, Earth system modelling, environmental data, and science communication.</p>
+          <p>News, media coverage, and public-facing stories from the Aerosol, Climate &amp; Biogeochemistry Lab and collaborators.</p>
         </div>
         <aside class="pi-card">
-          <img class="profile-photo" src="images/Douglas-Hamilton-500.jpg" alt="Douglas S. Hamilton">
-          <h3>Douglas S. Hamilton</h3>
-          <p>Principal Investigator<br>Assistant Professor, NC State University</p>
+          <h3>In the News</h3>
+          <p>Updates on wildfire science, aerosols, atmospheric chemistry, ocean biogeochemistry, and landscape literacy.</p>
         </aside>
       </section>
 
       <section class="content">
-        <h2 class="section-title">Principal Investigator</h2>
-        <div class="people-grid">
-          <img class="people-photo" src="images/Douglas-Hamilton-500.jpg" alt="Douglas S. Hamilton">
-          <section class="panel">
-            <h2>Douglas S. Hamilton</h2>
-            <p><strong>Assistant Professor</strong><br>Department of Marine, Earth, and Atmospheric Sciences<br>North Carolina State University</p>
-            <div class="research-focus">Fire • Aerosols • Climate • Biogeochemistry</div>
-            <p>Douglas is an Earth system scientist working at the intersection of aerosols, climate, atmospheric chemistry, biogeochemistry, wildfire science, air quality, and environmental change. The lab combines models, observations, field data, and immersive visualization tools to understand how atmospheric processes shape climate, ecosystems, and society.</p>
-            <div class="tags">
-              <span class="tag">Wildfire science</span><span class="tag">Aerosols</span><span class="tag">Atmospheric chemistry</span><span class="tag">Earth system modelling</span><span class="tag">Ocean biogeochemistry</span><span class="tag">Air quality</span><span class="tag">Landscape literacy</span>
-            </div>
-            <p style="margin-top:18px"><a class="button red" href="mailto:dshamil3@ncsu.edu">Email Douglas</a><a class="button" href="https://meas.sciences.ncsu.edu/people/dshamil3/" target="_blank" rel="noopener">NC State profile</a><a class="button" href="https://scholar.google.com/citations?hl=en&user=u0bVljUAAAAJ" target="_blank" rel="noopener">Google Scholar</a></p>
-          </section>
-        </div>
+        <h2 class="section-title">Videos &amp; Talks</h2>
 
-        <h2 class="section-title">Postdoctoral Researchers</h2>
-        <div class="team-block">
-          <article class="team-card">
-            <img class="team-photo" src="images/people/ElisaBergasMasso-500-768x767.png" alt="Elisa Bergas Massó">
-            <div>
-              <h2>Elisa Bergas Massó</h2>
-              <div class="team-role">Postdoctoral Research Scholar</div>
-              <div class="research-focus">Aerosols • Dust • Ocean Biogeochemistry</div>
-              <p>My research explores how atmospheric aerosols shape the Earth system. By combining Earth system models and observations, I investigate how desert dust and biomass-burning aerosols influence ocean biogeochemistry, marine productivity, carbon sequestration, and ecosystem health.</p>
-              <div class="keyword-container">
-                <span class="keyword">Earth System Science</span>
-                <span class="keyword">Atmospheric Aerosols</span>
-                <span class="keyword">Wildfires</span>
-                <span class="keyword">Desert Dust</span>
-                <span class="keyword">Aerosol–Earth System Interactions</span>
-                <span class="keyword">Air–Sea Interactions</span>
-                <span class="keyword">Ocean Biogeochemistry</span>
-                <span class="keyword">Data Visualization</span>
-              </div>
-              <div class="profile-links">
-                <a class="primary" href="https://scholar.google.com/citations?hl=en&user=BW0fZpMAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-              </div>
-            </div>
+        <div class="news-grid">
+          <article class="news-card n1">
+            <div class="meta">Video Feature</div>
+            <h2>Wildfires and Ocean Productivity</h2>
+            <p>Discussion of how wildfire smoke can transport iron and other nutrients across ocean basins, influencing phytoplankton productivity and marine biogeochemical cycles.</p>
+            <a href="https://www.youtube.com/watch?v=6eEYutKIUYQ" target="_blank" rel="noopener">Watch video →</a>
+          </article>
+
+          <article class="news-card n2">
+            <div class="meta">Video Feature</div>
+            <h2>Atmospheric Aerosols and Earth System Change</h2>
+            <p>Exploring the role of atmospheric aerosols in linking climate, ecosystems, air quality, and the global carbon cycle.</p>
+            <a href="https://www.youtube.com/watch?v=APGGvqFc41g" target="_blank" rel="noopener">Watch video →</a>
+          </article>
+
+          <article class="news-card n3">
+            <div class="meta">Video Feature</div>
+            <h2>Wildfires, Aerosols, and the Earth System</h2>
+            <p>Discussion of how wildfire emissions influence atmospheric chemistry, climate, air quality, and biogeochemical cycling across the Earth system.</p>
+            <a href="https://www.youtube.com/watch?v=hqTfef0XfZw" target="_blank" rel="noopener">Watch video →</a>
           </article>
         </div>
 
-        <h2 class="section-title">Graduate Researchers</h2>
-        <div class="team-block">
-          <article class="team-card">
-            <img class="team-photo" src="images/people/matthew_romm.png" alt="Matthew Romm">
-            <div>
-              <h2>Matthew Romm</h2>
-              <div class="team-role">PhD Student, Marine Science</div>
-              <div class="research-focus">Remote Sensing • Machine Learning • Phytoplankton</div>
-              <p>Matthew Romm is a marine science PhD student using satellite observations and machine learning to understand how aerosols and other environmental drivers influence nutrient availability and ocean phytoplankton activity. His research aims to improve our understanding of Earth system processes and marine biogeochemical cycles. Outside of research, Matthew enjoys hiking, exploring new places, and visiting museums.</p>
-              <div class="keyword-container">
-                <span class="keyword">Marine Science</span>
-                <span class="keyword">Phytoplankton</span>
-                <span class="keyword">Atmospheric Aerosols</span>
-                <span class="keyword">Dust Deposition</span>
-                <span class="keyword">Nutrient Availability</span>
-                <span class="keyword">Biogeochemical Cycles</span>
-                <span class="keyword">Earth System Science</span>
-                <span class="keyword">Satellites</span>
-                <span class="keyword">Remote Sensing</span>
-                <span class="keyword">Machine Learning</span>
-              </div>
-              <div class="profile-links">
-                <a class="primary" href="https://scholar.google.com/scholar?q=Matthew+Romm+phytoplankton+dust+deposition" target="_blank" rel="noopener">Google Scholar</a>
-              </div>
-            </div>
+        <h2 class="section-title">Featured Media Coverage</h2>
+
+        <div class="news-grid">
+          <article class="news-card n1">
+            <div class="meta">Vox · 2021</div>
+            <h2>Wildfires in Australia caused an explosion of sea life thousands of miles away</h2>
+            <p>Coverage of research linking iron-rich smoke from the 2019–2020 Australian wildfires to a major Southern Ocean phytoplankton bloom.</p>
+            <a href="https://www.vox.com/down-to-earth/2021/9/15/22672480/wildfires-oceans-algae-blooms-climate-change-australia" target="_blank" rel="noopener">Read article →</a>
           </article>
 
-          <article class="team-card">
-            <img class="team-photo" src="images/people/EthanBrain_Headshot_02.png" alt="Ethan Brain">
-            <div>
-              <h2>Ethan Brain</h2>
-              <div class="team-role">PhD Student</div>
-              <div class="research-focus">XR/VR • Scientific Visualization • Wildfire Education</div>
-              <p>Ethan is a multimedia designer and visualization researcher working at the intersection of scientific visualization, immersive technology, and atmospheric science. His work uses 3D modeling, real-time simulation, and XR/VR experiences to represent complex Earth science processes, making them more accessible for research, education, and public communication.</p>
-              <div class="keyword-container">
-                <span class="keyword">Scientific Visualization</span>
-                <span class="keyword">Virtual Reality (VR)</span>
-                <span class="keyword">Design</span>
-                <span class="keyword">Wildfire Science</span>
-                <span class="keyword">Science Communication</span>
-                <span class="keyword">Interactive Media</span>
-              </div>
-              <div class="profile-links">
-                <a class="primary" href="https://ethanjbrain.com/" target="_blank" rel="noopener">Website</a>
-                <a href="https://scholar.google.com/scholar?q=Ethan+Brain+scientific+visualization+wildfire" target="_blank" rel="noopener">Google Scholar</a>
-              </div>
-            </div>
+          <article class="news-card n6">
+            <div class="meta">Scientific American · 2019</div>
+            <h2>Humans may be accidentally geoengineering the oceans</h2>
+            <p>Scientific American highlighted research on anthropogenic iron emissions, ocean productivity, and the global carbon cycle.</p>
+            <a href="https://www.scientificamerican.com/article/humans-may-be-accidentally-geoengineering-the-oceans/" target="_blank" rel="noopener">Read article →</a>
+          </article>
+
+          <article class="news-card n3">
+            <div class="meta">Cornell Chronicle · 2018</div>
+            <h2>Cooling effect of preindustrial fires on climate underestimated</h2>
+            <p>Cornell News featured research showing that preindustrial fire emissions were substantially larger than previously assumed.</p>
+            <a href="https://news.cornell.edu/stories/2018/10/cooling-effect-preindustrial-fires-climate-underestimated" target="_blank" rel="noopener">Read article →</a>
+          </article>
+
+          <article class="news-card n2">
+            <div class="meta">Eos · 2025</div>
+            <h2>Scrambling to study smoke on the water</h2>
+            <p>A feature on scientists studying the air, ocean, and ecosystem impacts of the Los Angeles wildland–urban interface fires.</p>
+            <a href="https://eos.org/features/scrambling-to-study-smoke-on-the-water" target="_blank" rel="noopener">Read story →</a>
+          </article>
+
+          <article class="news-card n4">
+            <div class="meta">Popular Science / Hakai · 2022</div>
+            <h2>Wildfire smoke from across continents is changing the Arctic Ocean</h2>
+            <p>Public science coverage of wildfire aerosol nutrient deposition and potential ecological effects in the Arctic Ocean.</p>
+            <a href="https://www.popsci.com/environment/wildfires-algae-arctic-ocean/" target="_blank" rel="noopener">Read story →</a>
+          </article>
+
+          <article class="news-card n6">
+            <div class="meta">WWF Arctic · 2023</div>
+            <h2>Fire, water and the air we breathe</h2>
+            <p>A public-facing story on wildfire aerosols, ocean productivity, and the interconnected Earth system.</p>
+            <a href="https://www.arcticwwf.org/the-circle/stories/fire-water-and-the-air-we-breathe/" target="_blank" rel="noopener">Read story →</a>
           </article>
         </div>
 
-        <h2 class="section-title">MS Students</h2>
-        <div class="team-block">
-          <article class="team-card">
-            <img class="team-photo" src="images/people/kat_caughron.jpg" alt="Kat Caughron">
-            <div>
-              <h2>Kat Caughron</h2>
-              <div class="team-role">MS Student</div>
-              <div class="research-focus">Wildfire • Meteorology • Air Quality</div>
-              <p>Kat is an atmospheric scientist interested in understanding the interactions among wildfire, meteorology, air quality, climate, ecosystems, and communities. Her research takes a transdisciplinary approach to explore how environmental change influences both natural and human systems, with the goal of supporting more resilient and informed responses to wildfire and climate-related challenges.</p>
-              <div class="keyword-container">
-                <span class="keyword">Wildfire Science</span>
-                <span class="keyword">Fire Ecology</span>
-                <span class="keyword">Atmospheric Science</span>
-                <span class="keyword">Meteorology</span>
-                <span class="keyword">Air Quality</span>
-                <span class="keyword">Climate Change</span>
-                <span class="keyword">Earth System Science</span>
-                <span class="keyword">Environmental Impacts</span>
-                <span class="keyword">Community Resilience</span>
-                <span class="keyword">Transdisciplinary Research</span>
-              </div>
-              <div class="profile-links">
-                <a class="primary" href="https://www.linkedin.com/in/katherine-caughron-b615b822b/" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="https://meas.sciences.ncsu.edu/people/klcaughr/" target="_blank" rel="noopener">NC State Profile</a>
-                <a href="https://scholar.google.com/scholar?q=Katherine+Caughron+meteorology+wildfire" target="_blank" rel="noopener">Google Scholar</a>
-              </div>
-            </div>
-          </article>
-        </div>
+        <h2 class="section-title">Lab News</h2>
 
-        <h2 class="section-title">Lab Community</h2>
-        <div class="student-grid">
-          <article class="person-card"><h3>Undergraduate Researchers</h3><p>Students contributing to coding, field data, instrumentation, visualization, and immersive environmental learning.</p></article>
-          <article class="person-card"><h3>Collaborators</h3><p>Partners across atmospheric science, oceanography, ecology, public health, education, and computer science.</p></article>
-          <article class="person-card"><h3>Alumni</h3><p>Former students and researchers who have contributed to the lab's work across aerosols, fire, climate, and environmental communication.</p></article>
+        <div class="news-grid">
+          <article class="news-card n1">
+            <div class="meta">NC State News · 2025</div>
+            <h2>Climate-driven fires could double soluble iron in northern oceans</h2>
+            <p>Coverage of work led by Elisa Bergas Massó on how future fire emissions may influence ocean productivity and carbon cycling.</p>
+            <a href="https://news.ncsu.edu/2025/06/climate-change-driven-fires-could-double-soluble-iron-in-northern-oceans/" target="_blank" rel="noopener">Read story →</a>
+          </article>
+
+          <article class="news-card n3">
+            <div class="meta">NC State News · 2024</div>
+            <h2>Fires and climate are changing. Science needs to change too.</h2>
+            <p>Coverage of transdisciplinary fire science and the need for new approaches to study fires in a changing world.</p>
+            <a href="https://news.ncsu.edu/2024/07/fires-and-climate-are-changing-science-needs-to-change-too/" target="_blank" rel="noopener">Read story →</a>
+          </article>
+
+          <article class="news-card n4">
+            <div class="meta">NC State News · 2022</div>
+            <h2>Wildfire smoke may have amplified Arctic phytoplankton bloom</h2>
+            <p>Research coverage on how wildfire-derived nutrients can influence phytoplankton activity in the Arctic Ocean.</p>
+            <a href="https://news.ncsu.edu/2022/09/wildfire-smoke-may-have-amplified-arctic-phytoplankton-bloom/" target="_blank" rel="noopener">Read story →</a>
+          </article>
         </div>
       </section>
     </main>

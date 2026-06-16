@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#194365"/>
+      <stop offset="55%" stop-color="#092338"/>
+      <stop offset="100%" stop-color="#05111d"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="900" fill="url(#g)"/>
+  <circle cx="450" cy="338" r="150" fill="none" stroke="#31d6e8" stroke-opacity="0.45" stroke-width="12"/>
+  <path d="M190 770c45-145 145-220 260-220s215 75 260 220" fill="none" stroke="#31d6e8" stroke-opacity="0.35" stroke-width="18" stroke-linecap="round"/>
+  <text x="450" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="150" font-weight="700" fill="#f4f7fb" filter="url(#glow)">MR</text>
+  <text x="450" y="820" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="700" letter-spacing="6" fill="#bdefff">PHOTO COMING SOON</text>
+</svg>
