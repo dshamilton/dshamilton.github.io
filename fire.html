@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fire, Climate, & Society | Aerosol, Climate & Biogeochemistry Lab</title>
+  <meta name="description" content="Fire, Climate, & Society research theme in the Aerosol, Climate & Biogeochemistry Lab at NC State." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#061523;--navy2:#092338;--panel:#091827;--line:rgba(255,255,255,.16);--text:#f4f7fb;--muted:rgba(244,247,251,.78);--red:#ff3b22;--orange:#ff8a22;--gold:#d7a431;--cyan:#31d6e8;--purple:#b57cff;--green:#76cf35;}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;min-height:100vh;color:var(--text);background:#05111d;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55} a{color:inherit;text-decoration:none}
+    .page{display:grid;grid-template-columns:320px 1fr;min-height:100vh}.sidebar{position:fixed;inset:0 auto 0 0;width:320px;background:linear-gradient(180deg,rgba(5,20,33,.98),rgba(4,17,29,.96)),radial-gradient(circle at 30% 10%,rgba(49,214,232,.18),transparent 35%);border-right:1px solid var(--line);padding:34px 38px;display:flex;flex-direction:column;justify-content:space-between;z-index:5}.logo-wrap{text-align:center;margin-bottom:20px;position:relative}.logo-wrap:before{content:"";position:absolute;top:48%;left:50%;transform:translate(-50%,-50%);width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(110,197,255,.18) 0%,rgba(110,197,255,.08) 42%,transparent 74%);z-index:-1}.logo-wrap img{width:220px;max-width:100%;display:block;margin:0 auto 18px;border:0!important;outline:0!important;background:transparent!important;filter:drop-shadow(0 0 15px rgba(110,197,255,.65)) drop-shadow(0 0 35px rgba(110,197,255,.35)) drop-shadow(0 15px 35px rgba(0,0,0,.65))}.brand{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em;text-align:left}.brand .top{font-size:28px;line-height:1.05;color:#fff;font-weight:700}.brand .bottom{font-size:16px;color:var(--red);margin-top:10px;letter-spacing:.12em}.nav{list-style:none;padding:34px 0 0;margin:0;border-top:1px solid rgba(255,255,255,.06)}.nav li{margin:0 0 18px}.nav a{display:flex;gap:14px;align-items:center;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.82)}.nav a:hover,.nav a.active{color:var(--red)}.icon{width:24px;text-align:center;font-size:19px;color:#8bc7dd}.quote{border-top:1px solid rgba(255,255,255,.06);padding-top:24px;color:rgba(255,255,255,.82);font-style:italic;font-size:14px}.quote .mark{display:block;color:var(--red);font-size:54px;font-family:Georgia,serif;line-height:.5;margin-bottom:8px}
+    main{grid-column:2;min-width:0;background:#f7f4ed;color:#111}.fire-hero-image{position:relative;background:#050505;border-bottom:1px solid rgba(0,0,0,.12);overflow:hidden}.fire-hero-image img{display:block;width:100%;height:auto}.fire-hero-image a{position:absolute;left:28px;bottom:22px;background:rgba(0,0,0,.58);color:#f2c338;border:1px solid rgba(242,195,56,.35);border-radius:999px;padding:10px 14px;font-family:"Barlow Condensed";text-transform:uppercase;letter-spacing:.1em;font-weight:700}.intro{max-width:1050px;margin:0 auto;padding:42px 28px 18px;font-size:19px;color:#111}.section-heading{text-align:center;font-family:"Barlow Condensed";text-transform:uppercase;letter-spacing:.1em;font-size:27px;margin:18px 0 4px;color:#111}.section-heading:after{content:"";display:block;width:48px;height:3px;background:#b98400;margin:8px auto 0}.paper-grid{max-width:1180px;margin:0 auto;padding:24px 28px 54px;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.paper-card{position:relative;min-height:290px;border-radius:8px;overflow:hidden;background:#111;color:#fff;border:1px solid rgba(0,0,0,.16);display:flex;flex-direction:column;justify-content:flex-end;padding:18px;text-decoration:none;box-shadow:0 16px 38px rgba(0,0,0,.16);transition:transform .25s ease,box-shadow .25s ease}.paper-card:before{content:"";position:absolute;inset:0;background-image:var(--paper-bg);background-size:cover;background-position:center;opacity:.68;filter:saturate(1.05) contrast(1.08)}.paper-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.84))}.paper-card>*{position:relative;z-index:1}.paper-card:hover{transform:translateY(-6px);box-shadow:0 26px 52px rgba(0,0,0,.28)}.paper-topic{font-family:"Barlow Condensed";text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:#f2c338;margin-bottom:8px}.paper-card h3{font-family:"Barlow Condensed";text-transform:uppercase;letter-spacing:.035em;line-height:1.05;font-size:23px;margin:0 0 10px}.paper-card p{font-size:13px;color:rgba(255,255,255,.82);margin:0 0 12px}.paper-link{display:inline-block;color:#f2c338;font-family:"Barlow Condensed";font-weight:700;letter-spacing:.09em;text-transform:uppercase;font-size:14px;transition:transform .25s ease}.paper-card:hover .paper-link{transform:translateX(5px)}.paper1{--paper-bg:url("images/fulls/fire.jpg")}.paper2{--paper-bg:url("images/fulls/dust.jpg")}.paper3{--paper-bg:url("images/fulls/smoke.jpg")}.paper4{--paper-bg:url("images/fulls/ocean.jpg")}.paper5{--paper-bg:url("images/fulls/wui.jpg")}.impact-section{border-top:1px solid rgba(0,0,0,.09);background:linear-gradient(180deg,#f8f4ec,#f1eadf);padding:44px 56px 52px}.impact-wrap{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:start}.impact-section h2{font-family:"Barlow Condensed";text-transform:uppercase;letter-spacing:.05em;font-size:34px;margin:0 0 14px}.impact-section p{color:#222;margin-top:0}.impact-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 22px}.impact-list li{background:rgba(255,255,255,.56);border:1px solid rgba(0,0,0,.08);border-radius:8px;padding:16px 18px;position:relative;color:#222;box-shadow:0 10px 26px rgba(0,0,0,.05)}.gold-link{color:#a87700;font-weight:700}.footer-quote{background:#050b12;color:#fff;padding:28px 56px;display:flex;gap:40px;align-items:center}.footer-quote a{color:var(--gold);font-weight:700}.footer-quote blockquote{margin:0;border-left:1px solid rgba(255,255,255,.18);padding-left:36px;color:rgba(255,255,255,.85);font-style:italic}
+    @media(max-width:1180px){.page{grid-template-columns:1fr}.sidebar{position:relative;width:auto;display:block}.logo-wrap img{width:180px}.brand{text-align:center}.nav{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}.nav li{margin:0}.quote{display:none}main{grid-column:1}.fire-hero-image{}.paper-grid{grid-template-columns:repeat(2,1fr)}.impact-wrap{grid-template-columns:1fr}.impact-list{grid-template-columns:1fr}}
+    @media(max-width:700px){.sidebar{padding:24px}.fire-hero-image{}.paper-grid{grid-template-columns:1fr}.impact-section{padding:30px 24px}.footer-quote{display:block;padding:24px}.footer-quote blockquote{margin-top:20px;padding-left:20px}.brand .top{font-size:25px}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <div>
+        <div class="logo-wrap"><img src="images/World.png" alt="Aerosol, Climate & Biogeochemistry Lab logo"></div>
+        <div class="brand"><div class="top">Aerosol, Climate &amp;<br>Biogeochemistry Lab</div><div class="bottom">North Carolina State University</div></div>
+        <ul class="nav">
+          <li><a href="index.html"><span class="icon">⌂</span>Home</a></li>
+          <li><a class="active" href="index.html#research-themes"><span class="icon">⚗</span>Research</a></li>
+          <li><a href="people.html"><span class="icon">☷</span>People</a></li>
+          <li><a href="index.html#research"><span class="icon">▤</span>Publications</a></li>
+          <li><a href="news.html"><span class="icon">▦</span>News</a></li>
+          <li><a href="index.html#join"><span class="icon">♁</span>Join us</a></li>
+          <li><a href="index.html#contact"><span class="icon">✉</span>Contact</a></li>
+        </ul>
+      </div>
+      <div class="quote"><span class="mark">“</span>Fire connects the atmosphere, biosphere, hydrosphere, and human systems across time and space.</div>
+    </aside>
+
+    <main>
+      <section class="fire-hero-image" aria-label="Fire, Climate, and Society hero banner">
+        <img src="images/fulls/fire-hero-banner.png" alt="Fire, Climate, and Society hero banner with wildfire background and fire-regime schematic">
+        <a href="index.html#research-themes">‹ Research Themes</a>
+      </section>
+
+      <section class="intro">
+        <p>We study fire across the fire regime—from ignitions to emissions—and its interactions with climate, vegetation, atmospheric chemistry, and society. Our work integrates field observations, remote sensing, laboratory analyses, modelling, and data science to understand how wildfires influence and are influenced by the Earth System.</p>
+      </section>
+
+      <h2 class="section-heading">Selected Papers Across the Fire Theme</h2>
+
+      <section class="paper-grid" aria-label="Selected fire research papers">
+        <a class="paper-card paper1" href="https://www.nature.com/articles/s41467-018-05592-9" target="_blank" rel="noopener noreferrer">
+          <div class="paper-topic">Preindustrial Fire</div>
+          <h3>Climate Models Underestimate Preindustrial Fire Emissions</h3>
+          <p>Reassessing preindustrial fire emissions and their implications for aerosol forcing and Earth System change.</p>
+          <span class="paper-link">Read paper →</span>
+        </a>
+
+        <a class="paper-card paper2" href="https://www.annualreviews.org/content/journals/10.1146/annurev-marine-031921-013612" target="_blank" rel="noopener noreferrer">
+          <div class="paper-topic">Post-Fire Dust</div>
+          <h3>The Impacts of Post-Fire Dust on Ocean Biogeochemistry</h3>
+          <p>Highlighting how wildfire impacts can extend beyond smoke through post-fire dust, nutrient deposition, and ocean biogeochemical responses.</p>
+          <span class="paper-link">Read paper →</span>
+        </a>
+
+        <a class="paper-card paper3" href="https://www.researchsquare.com/article/rs-4567012/v1" target="_blank" rel="noopener noreferrer">
+          <div class="paper-topic">Climate Interactions</div>
+          <h3>Fire Emissions and Aerosol Forcing</h3>
+          <p>Global warming may increase fire emissions, but the resulting aerosol forcing remains uncertain.</p>
+          <span class="paper-link">Read preprint →</span>
+        </a>
+
+        <a class="paper-card paper4" href="https://www.nature.com/articles/s41558-025-02356-4" target="_blank" rel="noopener noreferrer">
+          <div class="paper-topic">Ecosystems &amp; Biogeochemistry</div>
+          <h3>Fire-Driven Ocean Fertilization</h3>
+          <p>Future climate-driven fires may boost productivity in the iron-limited North Atlantic.</p>
+          <span class="paper-link">Read paper →</span>
+        </a>
+
+        <a class="paper-card paper5" href="https://gmd.copernicus.org/articles/18/3265/2025/" target="_blank" rel="noopener noreferrer">
+          <div class="paper-topic">People &amp; Society</div>
+          <h3>HTAP3 Fires and Future Impacts</h3>
+          <p>A multi-model, multi-pollutant framework for assessing fire impacts on air quality, climate, and health.</p>
+          <span class="paper-link">Read paper →</span>
+        </a>
+      </section>
+
+      <section class="impact-section">
+        <div class="impact-wrap">
+          <div>
+            <h2>Applications &amp; Impact</h2>
+            <p>Our fire research connects fundamental Earth System science to practical questions about climate risk, air quality, ecosystem response, and decision-making in fire-prone landscapes. We use observations, models, laboratory data, and visualization tools to understand how fires affect the atmosphere, oceans, ecosystems, and communities across spatial and temporal scales.</p>
+            <p><a class="gold-link" href="news.html">See public-facing fire and aerosol media coverage →</a></p>
+          </div>
+          <ul class="impact-list">
+            <li><strong>Climate assessments:</strong> constraining historical and preindustrial fire emissions and their role in aerosol forcing.</li>
+            <li><strong>Earth System models:</strong> improving representations of smoke, dust, deposition, and aerosol optical properties.</li>
+            <li><strong>Ocean biogeochemistry:</strong> linking fire-driven nutrient deposition to marine productivity and carbon cycling.</li>
+            <li><strong>Air quality and health:</strong> evaluating multi-pollutant smoke exposure, regional air quality, and future health-relevant impacts.</li>
+            <li><strong>Land and fire management:</strong> supporting prescribed-fire planning, risk communication, and policy-relevant fire science.</li>
+            <li><strong>Education and visualization:</strong> communicating wildfire processes through data visualization, science communication, and immersive tools.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="footer-quote">
+        <a href="index.html#research-themes">‹ Back to Research Themes</a>
+        <blockquote>“Fire connects the atmosphere, biosphere, hydrosphere, and human systems across time and space.”</blockquote>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aerosols & Atmospheric Chemistry | Aerosol, Climate & Biogeochemistry Lab</title>
+  <meta name="description" content="Aerosols and atmospheric chemistry research in the Aerosol, Climate & Biogeochemistry Lab at NC State." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#061523; --navy2:#092338; --panel:#091827; --line:rgba(255,255,255,.16);
+      --text:#f4f7fb; --muted:rgba(244,247,251,.78); --red:#ff3b22; --orange:#ff8a22;
+      --gold:#d7a431; --cyan:#31d6e8; --purple:#b57cff; --green:#76cf35; --blue:#1167bd;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;color:var(--text);background:#05111d;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}.page{display:grid;grid-template-columns:320px 1fr;min-height:100vh}
+    .sidebar{position:fixed;inset:0 auto 0 0;width:320px;background:linear-gradient(180deg,rgba(5,20,33,.98),rgba(4,17,29,.96)),radial-gradient(circle at 30% 10%,rgba(49,214,232,.18),transparent 35%);border-right:1px solid var(--line);padding:34px 38px;display:flex;flex-direction:column;justify-content:space-between;z-index:5}
+    .logo-wrap{text-align:center;margin-bottom:20px;position:relative;z-index:2}.logo-wrap:before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(110,197,255,.18) 0%,rgba(110,197,255,.08) 40%,transparent 75%);z-index:-1}
+    .logo-wrap img{width:220px;max-width:100%;display:block;margin:0 auto 18px;border:0!important;outline:0!important;background:transparent!important;filter:drop-shadow(0 0 15px rgba(110,197,255,.65)) drop-shadow(0 0 35px rgba(110,197,255,.35)) drop-shadow(0 15px 35px rgba(0,0,0,.65));transition:.3s ease}
+    .logo-wrap img:hover{transform:scale(1.03);filter:drop-shadow(0 0 18px rgba(110,197,255,.8)) drop-shadow(0 0 50px rgba(110,197,255,.45)) drop-shadow(0 18px 40px rgba(0,0,0,.75))}
+    .brand{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em;text-align:left}.brand .top{font-size:28px;line-height:1.05;font-weight:700;color:#fff}.brand .bottom{font-size:16px;color:var(--red);margin-top:10px;letter-spacing:.12em}
+    .nav{list-style:none;padding:34px 0 0;margin:0;border-top:1px solid rgba(255,255,255,.06)}.nav li{margin:0 0 18px}.nav a{display:flex;gap:14px;align-items:center;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.82)}.nav a:hover,.nav a.active{color:var(--cyan)}.icon{width:24px;text-align:center;font-size:19px;color:#8bc7dd}.quote{border-top:1px solid rgba(255,255,255,.06);padding-top:24px;color:rgba(255,255,255,.82);font-style:italic;font-size:14px}.quote .mark{display:block;color:var(--cyan);font-size:54px;font-family:Georgia,serif;line-height:.5;margin-bottom:8px}
+    main{grid-column:2;min-width:0;background:#f7f8fb;color:#07111d}.aero-hero-image{position:relative;line-height:0;background:#02070d;border-bottom:1px solid rgba(255,255,255,.12)}.aero-hero-image img{display:block;width:100%;height:auto}.aero-hero-image .back-link{position:absolute;left:36px;bottom:24px;z-index:2;background:rgba(0,0,0,.58);border:1px solid rgba(255,255,255,.18);color:#ffe15a;padding:11px 14px;border-radius:999px;font-family:"Barlow Condensed";text-transform:uppercase;letter-spacing:.08em;font-size:15px;line-height:1;backdrop-filter:blur(8px)}.aero-hero-image .back-link:hover{background:rgba(0,0,0,.78)}
+    .intro{max-width:1120px;margin:0 auto;padding:32px 36px 18px;font-size:20px;line-height:1.55;color:#111}.intro strong{color:#004a7c}.section-heading{font-family:"Barlow Condensed";text-transform:uppercase;letter-spacing:.11em;font-size:28px;color:#07194a;margin:0 0 22px}.two-col{max-width:1160px;margin:0 auto;padding:18px 36px 34px;display:grid;grid-template-columns:1fr 1fr;gap:54px;border-bottom:1px solid rgba(0,0,0,.12)}.question-list,.impact-list{list-style:none;margin:0;padding:0}.question-list li{display:grid;grid-template-columns:54px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid rgba(0,0,0,.12)}.question-list li:last-child{border-bottom:0}.qicon,.iicon{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#061523;color:#fff;font-size:22px;box-shadow:0 10px 24px rgba(0,0,0,.18)}.question-list h3,.impact-list h3{font-size:16px;margin:0 0 3px;color:#07111d}.question-list p,.impact-list p{margin:0;color:#333;font-size:14px}.impact-list li{display:grid;grid-template-columns:58px 1fr;gap:16px;align-items:start;padding:10px 0}.impact-list li:nth-child(1) .iicon{background:#1167bd}.impact-list li:nth-child(2) .iicon{background:#e95e17}.impact-list li:nth-child(3) .iicon{background:#2f8f46}.impact-list li:nth-child(4) .iicon{background:#703aa7}.impact-list li:nth-child(5) .iicon{background:#0d8290}.impact-list li:nth-child(1) h3{color:#1167bd}.impact-list li:nth-child(2) h3{color:#e95e17}.impact-list li:nth-child(3) h3{color:#2f8f46}.impact-list li:nth-child(4) h3{color:#703aa7}.impact-list li:nth-child(5) h3{color:#0d8290}
+    .research-themes{max-width:1180px;margin:0 auto;padding:28px 28px 20px}.theme-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.research-card{display:flex;flex-direction:column;background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:8px;overflow:hidden;min-height:350px;box-shadow:0 12px 32px rgba(0,0,0,.08);transition:transform .25s ease,box-shadow .25s ease}.research-card:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(0,0,0,.16)}.research-card .image{height:132px;background-image:var(--bg);background-size:cover;background-position:center}.research-card .body{padding:16px 15px 18px;display:flex;flex-direction:column;flex:1}.research-card .tag{font-family:"Barlow Condensed";text-transform:uppercase;letter-spacing:.08em;font-weight:700;font-size:13px;color:var(--tag)}.research-card h3{font-size:18px;line-height:1.15;margin:7px 0 10px;color:#07111d}.research-card p{font-size:13px;color:#333;margin:0 0 14px}.research-card .paper-meta{font-size:12px;color:#555;margin-top:auto;font-style:italic}.research-card .learn{font-family:"Barlow Condensed";letter-spacing:.08em;text-transform:uppercase;color:var(--tag);font-weight:700;margin-top:12px}.dust-card{--bg:url("images/fulls/dust.jpg");--tag:#9b6e18}.smoke-card{--bg:url("images/fulls/smoke.jpg");--tag:#e95e17}.nutrient-card{--bg:url("images/fulls/ocean.jpg");--tag:#2f8f46}.climate-card{--bg:url("images/fulls/phosphorus.jpg");--tag:#703aa7}.model-card{--bg:url("images/fulls/digital.jpg");--tag:#0d8290}
+    .why{max-width:1180px;margin:16px auto 0;padding:0 28px 28px}.why-box{display:grid;grid-template-columns:repeat(5,1fr);gap:0;background:#fff;border:1px solid rgba(0,0,0,.11);border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.06);overflow:hidden}.why-item{padding:22px 22px;border-right:1px solid rgba(0,0,0,.1)}.why-item:last-child{border-right:0}.why-item h3{margin:0 0 8px;color:#07194a}.why-item p{margin:0;color:#333;font-size:13px}
+    .publications{max-width:1180px;margin:0 auto;padding:14px 28px 54px}.pub-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 54px}.pub{display:grid;grid-template-columns:1fr 58px;gap:16px;padding:10px 0;border-bottom:1px solid rgba(0,0,0,.09);font-size:13px;color:#111}.pub em{font-style:italic}.pub .year{text-align:right;color:#07194a;font-weight:700}.view-all{float:right;color:#0d5e9c;font-weight:700;font-size:13px}.footer-quote{background:#050b12;color:#fff;padding:28px 56px;display:flex;gap:40px;align-items:center}.footer-quote a{color:var(--cyan);font-weight:700}.footer-quote blockquote{margin:0;border-left:1px solid rgba(255,255,255,.18);padding-left:36px;color:rgba(255,255,255,.85);font-style:italic}
+    @media(max-width:1180px){.page{grid-template-columns:1fr}.sidebar{position:relative;width:auto;display:block}.logo-wrap img{width:180px}.brand{text-align:center}.nav{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}.nav li{margin:0}.quote{display:none}main{grid-column:1}.theme-cards{grid-template-columns:repeat(2,1fr)}.why-box{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}.pub-grid{grid-template-columns:1fr}}
+    @media(max-width:700px){.sidebar{padding:24px}.intro{font-size:17px;padding:26px 22px}.two-col,.research-themes,.why,.publications{padding-left:20px;padding-right:20px}.theme-cards,.why-box{grid-template-columns:1fr}.why-item{border-right:0;border-bottom:1px solid rgba(0,0,0,.1)}.aero-hero-image .back-link{left:18px;bottom:14px}.brand .top{font-size:25px}.footer-quote{display:block;padding:24px}.footer-quote blockquote{margin-top:20px;padding-left:20px}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <div>
+        <div class="logo-wrap"><img src="images/World.png" alt="Aerosol, Climate & Biogeochemistry Lab logo"></div>
+        <div class="brand"><div class="top">Aerosol, Climate &amp;<br>Biogeochemistry Lab</div><div class="bottom">North Carolina State University</div></div>
+        <ul class="nav">
+          <li><a href="index.html"><span class="icon">⌂</span>Home</a></li>
+          <li><a class="active" href="index.html#research-themes"><span class="icon">⚗</span>Research</a></li>
+          <li><a href="people.html"><span class="icon">☷</span>People</a></li>
+          <li><a href="index.html#research"><span class="icon">▤</span>Publications</a></li>
+          <li><a href="news.html"><span class="icon">▦</span>News</a></li>
+          <li><a href="index.html#join"><span class="icon">♁</span>Join us</a></li>
+          <li><a href="index.html#contact"><span class="icon">✉</span>Contact</a></li>
+        </ul>
+      </div>
+      <div class="quote"><span class="mark">“</span>Aerosols connect emissions, atmospheric chemistry, climate, ecosystems, and society across the Earth System.</div>
+    </aside>
+
+    <main>
+      <section class="aero-hero-image" aria-label="Aerosols and Atmospheric Chemistry hero banner">
+        <img src="images/fulls/aerosol-hero-banner.png" alt="Aerosols and Atmospheric Chemistry hero banner showing source regions, long-range transport, the aerosol life cycle, and Earth System impacts">
+        <a class="back-link" href="index.html#research-themes">‹ Research Themes</a>
+      </section>
+
+      <section class="research-themes" aria-label="Aerosol research themes">
+        <h2 class="section-heading" style="text-align:center">Our Research Themes</h2>
+        <div class="theme-cards">
+          <a class="research-card dust-card" href="https://gmd.copernicus.org/articles/12/5091/2019/" target="_blank" rel="noopener noreferrer">
+            <div class="image"></div><div class="body"><div class="tag">Dust &amp; Mineral Aerosols</div><h3>Representing mineralogy and iron cycling in Earth System models</h3><p>Quantifying mineral dust emissions, mineralogy, and iron cycling in climate models.</p><div class="paper-meta">Hamilton et al., Geoscientific Model Development, 2019</div><div class="learn">Learn more →</div></div>
+          </a>
+          <a class="research-card smoke-card" href="https://www.annualreviews.org/content/journals/10.1146/annurev-marine-031921-013612" target="_blank" rel="noopener noreferrer">
+            <div class="image"></div><div class="body"><div class="tag">Biogenic Aerosols</div><h3>Emissions, composition, aging, and climate effects of biogenic aerosols</h3><p>Understanding natural aerosol sources from forests and grasslands, and their interactions with atmospheric chemistry and climate.</p><div class="paper-meta">Hamilton et al., Annual Review of Marine Science, 2022</div><div class="learn">Learn more →</div></div>
+          </a>
+          <a class="research-card nutrient-card" href="https://www.nature.com/articles/s41558-025-02356-4" target="_blank" rel="noopener noreferrer">
+            <div class="image"></div><div class="body"><div class="tag">Atmospheric Nutrients</div><h3>Anthropogenic aerosols as a globally important source of bioavailable iron</h3><p>Investigating the transport and deposition of iron, phosphorus, and nitrogen to terrestrial and ocean ecosystems.</p><div class="paper-meta">Rathod &amp; Hamilton et al., Nature Climate Change, 2025</div><div class="learn">Learn more →</div></div>
+          </a>
+          <a class="research-card climate-card" href="https://www.nature.com/articles/s41467-018-05592-9" target="_blank" rel="noopener noreferrer">
+            <div class="image"></div><div class="body"><div class="tag">Aerosols &amp; Climate</div><h3>Preindustrial fire emissions and uncertainty in aerosol radiative forcing</h3><p>Constraining aerosol radiative forcing and reducing uncertainty in aerosol–cloud–climate interactions.</p><div class="paper-meta">Hamilton et al., Nature Communications, 2018</div><div class="learn">Learn more →</div></div>
+          </a>
+          <a class="research-card model-card" href="https://www.researchsquare.com/article/rs-4567012/v1" target="_blank" rel="noopener noreferrer">
+            <div class="image"></div><div class="body"><div class="tag">Aerosols in Earth System Models</div><h3>Future aerosol burdens, deposition, and climate feedbacks</h3><p>Improving aerosol representation in CAM, CESM, and next-generation Earth System models.</p><div class="paper-meta">Hamilton et al., Research Square, 2024/2025</div><div class="learn">Learn more →</div></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="why">
+        <h2 class="section-heading" style="text-align:center">Why Aerosols Matter</h2>
+        <div class="why-box">
+          <div class="why-item"><h3>Air Quality</h3><p>Aerosols drive PM<sub>2.5</sub> exposure and influence human health.</p></div>
+          <div class="why-item"><h3>Climate</h3><p>Aerosols affect Earth’s radiative balance and climate feedbacks.</p></div>
+          <div class="why-item"><h3>Ocean Productivity</h3><p>Atmospheric nutrients can stimulate phytoplankton growth.</p></div>
+          <div class="why-item"><h3>Ecosystem Health</h3><p>Nutrients and pollutants influence terrestrial and ocean ecosystems.</p></div>
+          <div class="why-item"><h3>Prediction</h3><p>Better aerosol processes improve Earth System model projections.</p></div>
+        </div>
+      </section>
+
+      <section class="publications" aria-label="Selected aerosol publications">
+        <a class="view-all" href="index.html#research">View all publications →</a>
+        <h2 class="section-heading">Selected Publications</h2>
+        <div class="pub-grid">
+          <div>
+            <div class="pub"><span>Hamilton, D. S., et al. Representing mineralogy and iron cycling in Earth System models: The MIMI v1.0 model. <em>Geoscientific Model Development</em>, 12, 5091–5114.</span><span class="year">2019</span></div>
+            <div class="pub"><span>Hamilton, D. S., et al. Preindustrial fire emissions and uncertainty in aerosol radiative forcing. <em>Nature Communications</em>, 9, 2832.</span><span class="year">2018</span></div>
+            <div class="pub"><span>Hamilton, D. S., et al. The impacts of post-fire dust on ocean biogeochemistry. <em>Annual Review of Marine Science</em>, 14, 355–379.</span><span class="year">2022</span></div>
+            <div class="pub"><span>Rathod, S. D., et al. Anthropogenic aerosols as a globally important source of bioavailable iron to the oceans. <em>Nature Climate Change</em>, 15, 671–680.</span><span class="year">2025</span></div>
+          </div>
+          <div>
+            <div class="pub"><span>Heavens, N. G., Hamilton, D. S., et al. Global distribution and characteristics of mineral dust. <em>Reviews of Geophysics</em>, 58, e2020RG000706.</span><span class="year">2020</span></div>
+            <div class="pub"><span>Hamilton, D. S., et al. Mineral dust stimulates oligotrophic ocean productivity in the subtropical North Atlantic. <em>Proceedings of the National Academy of Sciences</em>, 111, 20368–20373.</span><span class="year">2014</span></div>
+            <div class="pub"><span>Hamilton, D. S., et al. Observations of atmospheric chemistry and composition at marine and continental sites. <em>Elementa: Science of the Anthropocene</em>, 6, 33.</span><span class="year">2018</span></div>
+            <div class="pub"><span>Bates, T. S., Hamilton, D. S., et al. Global biogeochemical impacts of atmospheric aerosol deposition to the oceans. <em>Nature Geoscience</em>, 10, 352–356.</span><span class="year">2017</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-quote">
+        <a href="index.html#research-themes">‹ Back to Research Themes</a>
+        <blockquote>“The aerosol life cycle links sources, transport, chemistry, deposition, and impacts across the Earth System.”</blockquote>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aerosol, Climate & Biogeochemistry Lab | NC State</title>
-  <meta name="description" content="Aerosol, Climate & Biogeochemistry Lab at NC State: fire, aerosols, atmospheric chemistry, ocean nutrients, air quality, and Earth system change." />
+  <meta name="description" content="Aerosol, Climate & Biogeochemistry Lab at NC State: fire, aerosols, atmospheric chemistry, ocean nutrients, air quality, and Earth System change." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -28,13 +28,13 @@
     .pi-card{background:rgba(5,14,24,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:18px;box-shadow:0 24px 60px rgba(0,0,0,.35)}.profile-photo{width:100%;height:310px;object-fit:cover;object-position:center 28%;border-radius:10px;border:1px solid rgba(255,255,255,.15);box-shadow:0 20px 40px rgba(0,0,0,.45),0 0 25px rgba(110,197,255,.15)}.pi-card h3{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:28px;line-height:1;margin:16px 0 6px}.pi-card p{font-size:14px;color:rgba(255,255,255,.84);margin:0 0 12px}.pi-links{display:flex;flex-wrap:wrap;gap:8px}.pi-links a{font-family:"Barlow Condensed";letter-spacing:.08em;text-transform:uppercase;font-size:13px;color:var(--cyan)}
         .theme-section{background:linear-gradient(180deg,#081a2a,#061421);padding:30px 18px 36px;border-bottom:1px solid var(--line)}
     .theme-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:1260px;margin:0 auto}
-    .theme{min-height:220px;position:relative;overflow:hidden;border-radius:8px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid rgba(255,255,255,.12);background:#111}
+    .theme{min-height:220px;position:relative;overflow:hidden;border-radius:8px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid rgba(255,255,255,.12);background:#111;color:#fff;text-decoration:none;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
     .theme:before{content:"";position:absolute;inset:0;background-image:var(--bg);background-size:cover;background-position:center;opacity:.36;filter:saturate(1.08) contrast(1.08)}
     .theme:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,10,17,.22),rgba(3,10,17,.88))}
     .theme>*{position:relative;z-index:1}
     .theme h2{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;line-height:1.05;letter-spacing:.04em;margin:0 0 10px;font-size:27px}
     .theme p{font-size:14px;color:rgba(255,255,255,.86);margin:0 0 12px}
-    .theme a{font-family:"Barlow Condensed";font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c);font-size:14px}
+    .theme .theme-link{position:relative;z-index:1;font-family:"Barlow Condensed";font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c);font-size:14px;transition:transform .25s ease;display:inline-block}.theme:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.35);border-color:rgba(255,255,255,.22)}.theme:hover .theme-link{transform:translateX(7px)}
     .theme-icon{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;margin-bottom:14px;font-size:27px;background:color-mix(in srgb,var(--c) 62%,transparent);border:1px solid rgba(255,255,255,.24)}
     .theme.fire{--bg:url("images/fulls/fire.jpg");--c:var(--red)}
     .theme.aerosol{--bg:url("images/fulls/dust.jpg");--c:var(--gold)}
@@ -71,9 +71,9 @@
     <main id="home">
       <section class="hero">
         <div>
-          <h1>Understanding environmental change across the Earth system</h1>
+          <h1>Understanding environmental change across the Earth System</h1>
           <div class="accent"></div>
-          <p>We combine observations, atmospheric chemistry, Earth system modelling, and immersive technologies to understand how environmental change affects climate, air quality, ecosystems, and society.</p>
+          <p>We combine observations, atmospheric chemistry, Earth System modelling, and immersive technologies to understand how environmental change affects climate, air quality, ecosystems, and society.</p>
         </div>
         <aside class="pi-card">
           <img class="profile-photo" src="images/Douglas-Hamilton-500.jpg" alt="Douglas S. Hamilton">
@@ -90,37 +90,37 @@
       <section class="theme-section" id="research-themes">
         <h2 class="section-title">Research Themes</h2>
         <div class="theme-grid">
-          <article class="theme fire">
+          <a class="theme fire" href="fire.html" aria-label="Explore Fire, Climate and Society research">
             <div class="theme-icon">🔥</div>
-            <h2>Fire, Climate &amp; Society</h2>
+            <h2>Fire, Climate, &amp; Society</h2>
             <p>Understanding how climate change is reshaping wildfire activity and its impacts on air quality, human health, ecosystems, and society.</p>
-            <a href="#research">Explore →</a>
-          </article>
-          <article class="theme aerosol">
+            <span class="theme-link">Explore →</span>
+          </a>
+          <a class="theme aerosol" href="aerosols.html" aria-label="Explore Aerosols and Atmospheric Chemistry research">
             <div class="theme-icon">◌</div>
             <h2>Aerosols &amp; Atmospheric Chemistry</h2>
-            <p>Quantifying emissions, transport, transformation, and deposition of natural and anthropogenic aerosols across the Earth system.</p>
-            <a href="#research">Explore →</a>
-          </article>
-          <article class="theme ocean">
+            <p>Quantifying emissions, transport, transformation, and deposition of natural and anthropogenic aerosols across the Earth System.</p>
+            <span class="theme-link">Explore →</span>
+          </a>
+          <a class="theme ocean" href="#research" aria-label="Explore Ocean Nutrients and Biogeochemistry research">
             <div class="theme-icon">≋</div>
             <h2>Ocean Nutrients &amp; Biogeochemistry</h2>
             <p>Investigating how atmospheric deposition of iron, phosphorus, and nitrogen influences marine productivity and biogeochemical cycling.</p>
-            <a href="#research">Explore →</a>
-          </article>
-          <article class="theme digital">
+            <span class="theme-link">Explore →</span>
+          </a>
+          <a class="theme digital" href="#research" aria-label="Explore Digital Earth and Landscape Literacy research">
             <div class="theme-icon">▭</div>
             <h2>Digital Earth &amp; Landscape Literacy</h2>
-            <p>Developing immersive technologies, Earth system models, and visualization tools to understand and communicate environmental change.</p>
-            <a href="#research">Explore →</a>
-          </article>
+            <p>Developing immersive technologies, Earth System models, and visualization tools to understand and communicate environmental change.</p>
+            <span class="theme-link">Explore →</span>
+          </a>
         </div>
       </section>
 
       <section class="content" id="research">
         <h2 class="section-title">Featured Research</h2>
         <div class="work-grid">
-          <article class="work w1"><h3>Climate Models Underestimate Preindustrial Fire Emissions</h3><p>Fire, climate forcing, and Earth system uncertainty.</p><a href="https://doi.org/10.5194/acp-25-5857-2025" target="_blank" rel="noopener">Read paper →</a></article>
+          <article class="work w1"><h3>Climate Models Underestimate Preindustrial Fire Emissions</h3><p>Fire, climate forcing, and Earth System uncertainty.</p><a href="https://doi.org/10.5194/acp-25-5857-2025" target="_blank" rel="noopener">Read paper →</a></article>
           <article class="work w2"><h3>Post-Burn Dust and Earth System Feedbacks</h3><p>Wildfire legacies extend beyond smoke.</p><a href="https://doi.org/10.1029/2021GL097040" target="_blank" rel="noopener">Read paper →</a></article>
           <article class="work w3"><h3>Atmospheric Phosphorus on a Changing Planet</h3><p>Rathod &amp; Hamilton, 2025</p><a href="#" target="_blank" rel="noopener">Read paper →</a></article>
           <article class="work w4"><h3>Los Angeles Wildland–Urban Interface Fires</h3><p>WUI emissions, transport, deposition, and impacts.</p><a href="https://eos.org/features/scrambling-to-study-smoke-on-the-water" target="_blank" rel="noopener">Read article →</a></article>
